@@ -122,6 +122,13 @@ mark {
     font-size: 1.75rem;
 }
 
+#home #page-body h1 {
+    line-height: var(--bs-body-line-height);
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 1.75rem;
+}
+
 #page-body ul,
 #page-body p,
 #page-body dd,
