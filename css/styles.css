@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #031208;
-    --secondary-color: #030303;
+    --primary-color: #030303;
+    --secondary-color: #FCFCFC;
     --highlight-color: #C4F500;
     --accent-color: #E3E0D8;
 }
@@ -19,18 +19,8 @@
   }
 }
 
-.image-container img,
-.image-container canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 body {
     background-color: #f4f4f4;
-    font-family: "Inter", sans-serif;
     padding-top: 20px;
     color: var(--primary-color);
 }
@@ -42,25 +32,20 @@ h1 {
     font-size: 1.5rem;
 }
 
-h2 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    padding-bottom: 20px !important;
-    font-size: .85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.075rem;
+p,
+ul {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
 }
 
-h3 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.25em;
+strong {
+    font-weight: 400;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: var(--primary-color);
 }
 
 a:hover {
@@ -68,20 +53,11 @@ a:hover {
     color: var(--primary-color);
 }
 
-mark {
-    background-color: var(--accent-color);
-}
-
 #site-header {
     margin-bottom: 100px;
 }
 
-#site-header .logo,
-#site-footer .navigation {
-    text-align: right;
-}
-
-#home #site-header .logo {
+#site-header .logo{
     text-align: left;
 }
 
@@ -95,91 +71,17 @@ mark {
     margin-bottom: 100px;
 }
 
-#page-body,
-#page-body .col:last-of-type {
-    margin-bottom: 0;
-}
-
 #page-body .row {
     margin-bottom: 60px;
-}
-
-#page-body .row {
-    margin-bottom: 60px;
-}
-
-#page-body dl.row {
-    margin-bottom: 0;
-}
-
-#page-body .col {
-    margin-bottom: 20px;
-}
-
-#home #page-body p,
-#page-body p.introduction,
-#page-footer p {
-    font-size: 1.75rem;
-}
-
-#home #page-body h1 {
-    line-height: var(--bs-body-line-height);
-    font-family: "Inter", sans-serif;
-    font-weight: normal;
-    font-size: 1.75rem;
-}
-
-#page-body ul,
-#page-body p,
-#page-body dd,
-#page-footer ul {
-    font-size: 1.5rem;
-}
-
-#page-body .col p,
-#page-body dt {
-    font-size: 1.2rem;
-}
-
-#page-body p.introduction {
-    padding-bottom: 20px;
-}
-
-#page-body dt,
-#page-body dd {
-    padding-bottom: 10px;
-}
-
-#page-body dt {
-    font-weight: 600;
-}
-
-ul.feature-list li {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid;
-    border-color: var(--accent-color);
-}
-
-ul.feature-list-primary {
-    font-weight: 500;
-}
-
-ul.feature-list-secondary {
-    text-align: right;
-}
-
-ul.project-date li {
-    text-align: right;
-}
-
-.text-body-secondary {
-  font-weight: 300;
 }
 
 #site-footer, 
 #site-footer .container {
     margin-bottom: 10px;
+}
+
+#site-footer p {
+  font-size: 1rem;
 }
 
 /* Google Fonts */
