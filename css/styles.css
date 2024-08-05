@@ -1,272 +1,86 @@
 :root {
-    --primary-color: #030303;
-    --secondary-color: #FCFCFC;
-    --highlight-color: #C4F500;
-    --accent-color: #E3E0D8;
+  --primary-color: #030303;
+  --secondary-color: #FCFCFC;
+  --highlight-color: #C4F500;
+  --accent-color: #E3E0D8;
+  --font-body: "Inter", sans-serif;
+  --font-heading: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 @media (min-width: 960px) {
-  .container{
-	max-width: 840px;
+  .container {
+      max-width: 840px;
   }
 }
+
 @media (max-width: 768px) {
   small {
-    display: none;
+      display: none;
   }
   #about ul.list-unstyled {
-	margin-bottom: 0;
+      margin-bottom: 0;
   }
 }
 
 body {
-    background-color: #f4f4f4;
-    padding-top: 20px;
-    color: var(--primary-color);
+  background-color: #f4f4f4;
+  padding-top: 20px;
+  color: var(--primary-color);
+  font-family: var(--font-body);
 }
 
 h1 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 p,
 ul {
-    font-family: "Inter", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 300;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 strong {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 a {
-    text-decoration: underline;
-    color: var(--primary-color);
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 a:hover {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 #site-header {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
-#site-header .logo{
-    text-align: left;
+#site-header .logo {
+  text-align: left;
 }
 
 #site-header .logo a {
-    border: none;
+  border: none;
 }
 
 .container {
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 100px;
+  margin: 0 0 100px 0;
 }
 
 #page-body .row {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
-#site-footer, 
+#site-footer,
 #site-footer .container {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #site-footer p {
   font-size: 1rem;
-}
-
-/* Google Fonts */
-
-.ibm-plex sans-thin {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .ibm-plex sans-extralight {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .ibm-plex sans-light {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .ibm-plex sans-regular {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .ibm-plex sans-medium {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .ibm-plex sans-semibold {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .ibm-plex sans-bold {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .ibm-plex sans-thin-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .ibm-plex sans-extralight-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .ibm-plex sans-light-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .ibm-plex sans-regular-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .ibm-plex sans-medium-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .ibm-plex sans-semibold-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .ibm-plex sans-bold-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .ibm-plex mono-thin {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .ibm-plex mono-extralight {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .ibm-plex mono-light {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .ibm-plex mono-regular {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .ibm-plex mono-medium {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .ibm-plex mono-semibold {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .ibm-plex mono-bold {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .ibm-plex mono-thin-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .ibm-plex mono-extralight-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .ibm-plex mono-light-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .ibm-plex mono-regular-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .ibm-plex mono-medium-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .ibm-plex mono-semibold-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .ibm-plex mono-bold-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-
-.inter-tight-A {
-  font-family: "Inter Tight", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.inter-A {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
 }
