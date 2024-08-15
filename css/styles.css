@@ -115,7 +115,7 @@ a.icon:hover {
   float: left;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   .pill {
     padding: .4em .8em;
     margin-right: 0;
