@@ -119,6 +119,7 @@ a.icon:hover {
   .pill {
     padding: .4em .8em;
     margin-right: 0;
+    font-size: .8em;
   }
 }
 
