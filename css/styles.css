@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #030303;
-  --secondary-color: #FCFCFC;
-  --highlight-color: #C4F500;
+  --primary-color: #F2F1EE;
+  --secondary-color: #040b06;
+  --highlight-color: #354c0f;
   --accent-color: #E3E0D8;
   --font-body: "Inter", sans-serif;
   --font-heading: "IBM Plex Sans", sans-serif;
@@ -14,51 +14,52 @@
   }
 }
 
-@media (max-width: 768px) {
-  small {
-      display: none;
-  }
-  #about ul.list-unstyled {
-      margin-bottom: 0;
-  }
-}
-
 body {
-  background-color: #f4f4f4;
-  padding-top: 20px;
+  background-color: var(--secondary-color);
+  padding-top: 2em;
   color: var(--primary-color);
   font-family: var(--font-body);
+  font-weight: 100;
+  font-size: 1.75em;
+  line-height: 1.5em;
 }
 
 h1 {
   font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 1em;
 }
 
-p,
-ul {
-  font-size: 1.6rem;
+h2 {
+  font-family: var(--font-heading);
   font-weight: 300;
+  font-size: 1em;
 }
 
 strong {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--primary-color);
+  border-bottom: 2px solid var(--highlight-color);
 }
 
 a:hover {
   text-decoration: none;
   color: var(--primary-color);
+  border-bottom: none;
 }
 
-#site-header {
-  margin-bottom: 100px;
+a.icon {
+  border: none;
 }
+a.icon:hover {
+  border: none;
+  color: var(--highlight-color);
+}
+
 
 #site-header .logo {
   text-align: left;
@@ -68,23 +69,77 @@ a:hover {
   border: none;
 }
 
-.container {
-  margin: 0 0 100px 0;
+#site-header .navigation {
+  text-align: right;
+  font-size: .8em;
 }
 
-#page-body .row {
-  margin-bottom: 60px;
+#site-header .tagline {
+  font-size: .6em;
+  text-align: right;
+  font-family: var(--font-header);
 }
 
-#site-footer,
+
+#site-body {
+
+}
+
+#site-body .row {
+  margin-bottom: 2em;
+}
+
+#site-body .col {
+  margin-bottom: 2em;
+}
+
+.container,
+.container-fluid {
+  margin-bottom: 6em;
+}
+
+.container .row {
+  margin-bottom: 2em;
+}
+
+
+.title {
+  margin-bottom: 1.5em;
+}
+
+.pill {
+  text-align: left;
+  padding: .4em 1em;
+  border: .1rem solid var(--highlight-color);
+  border-radius: 1000px;
+  margin-right: .4em;
+  margin-bottom: .4em;
+  width: fit-content;
+  float: left;
+}
+
+#recent-projects li {
+  padding: 1.4em 0;
+  border-bottom: 1px solid var(--highlight-color);
+}
+
+#recent-projects li.first {
+  padding-top: 0;
+}
+
+#recent-projects li.last {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 #site-footer .container {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 #site-footer p {
-  font-size: 1rem;
+  font-size: .6em;
 }
 
 iframe {
-  width: 100%;
+  width: 60%;
 }
